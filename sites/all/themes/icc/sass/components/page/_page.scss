@@ -1,0 +1,19 @@
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $base-font-stack;
+  @include font-size($base-font-size);
+  color: $base-font-color;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

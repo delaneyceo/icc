@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900,100);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900,100);
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ace\/\.rvm\/gems\/ruby-1\.9\.3-p484\@omega\.icc\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_box-sizing\.scss}line{font-family:\0000334}}
 *,
 *:before,
@@ -17,11 +18,22 @@
   box-sizing: border-box;
   *behavior: url('../behaviors/box-sizing/boxsizing.php'); }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome/fontawesome-webfont.eot?v=4.0.0");
+  src: url("fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.0.0") format("embedded-opentype"), url("fonts/fontawesome/fontawesome-webfont.woff?v=4.0.0") format("woff"), url("fonts/fontawesome/fontawesome-webfont.ttf?v=4.0.0") format("truetype"), url("fonts/fontawesome/fontawesome-webfont.svg?v=4.0.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* No files to import found in abstractions/**\/* */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_media\.scss}line{font-family:\000031}}
 img, media {
   max-width: 100%;
   height: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_typography\.scss}line{font-family:\000031}}
+a {
+  text-decoration: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\000033}}
 .front body {
@@ -42,4 +54,55 @@ img, media {
   font-size: 40px;
   font-weight: 800; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\000036}}
+.block--system-main-menu .block__title {
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000310}}
+.block--system-main-menu .menu {
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000314}}
+  .block--system-main-menu .menu li {
+    list-style-image: none;
+    list-style-type: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000324}}
+  .block--system-main-menu .menu a {
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 1.8rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\000031}}
+.l-header {
+  background: #c56d28;
+  color: #fff;
+  min-height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\000037}}
+  .l-header a {
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000311}}
+  .l-header .site-name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    font-size: 2rem; }
+
 /* apply a natural box layout model to all elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\000038}}
+html {
+  font-size: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000312}}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #563a1b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }

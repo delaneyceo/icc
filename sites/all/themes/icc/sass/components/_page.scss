@@ -1,6 +1,0 @@
-/* apply a natural box layout model to all elements */
-*,
-*:before,
-*:after {
-  @include box-sizing(border-box);
-}

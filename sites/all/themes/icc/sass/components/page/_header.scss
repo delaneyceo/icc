@@ -1,0 +1,16 @@
+.l-header {
+  background: $icc-orange;
+  color: #fff;
+
+  min-height: 60px;
+
+  a {
+    color: #fff;
+  }
+
+  .site-name {
+    margin: 0;
+    font-weight: 600;
+    @include font-size(2);
+  }
+}

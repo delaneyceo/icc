@@ -1,0 +1,49 @@
+// Mixins
+// --------------------------
+
+@mixin icon($icon, $size: auto, $margin-right: auto, $margin-left: auto, $color: auto, $top: auto, $shadow: none, $float: none) {
+  @include icon-FontAwesome();
+  content: $icon;
+  @if $size != auto    { font-size: $size; }
+  @if $margin-right != auto  { margin-right: $margin-right; }
+  @if $margin-left != auto { margin-left: $margin-left; }
+  @if $color != auto   { color: $color; }
+  @if $top != auto     { position: relative; top: $top; }
+  @if $shadow != none { text-shadow: $shadow; }
+  @if $float != none  { float: $float; }
+}
+
+@mixin icon-FontAwesome() {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em; // fixes ie7 issues
+}
+
+@mixin icon-stack-useless($width: 2em, $height: 2em, $top-font-size: 1em, $base-font-size: 2em) {
+  .icon-stack {
+    position: relative;
+    display: inline-block;
+    width: $width;
+    height: $height;
+    line-height: $width;
+    vertical-align: -35%;
+    [class^="icon-"],
+    [class*=" icon-"] {
+      display: block;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-size: $top-font-size;
+      line-height: inherit;
+      *line-height: $height;
+    }
+    .icon-stack-base {
+      font-size: $base-font-size;
+      *line-height: #{$height / $base-font-size}em;
+    }
+  }
+}

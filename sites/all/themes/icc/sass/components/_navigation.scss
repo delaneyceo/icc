@@ -1,0 +1,29 @@
+.block--system-main-menu {
+  @include breakpoint(500px) {
+    float: right;
+  }
+
+  .block__title {
+    @include element-invisible;
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-image: none;
+      list-style-type: none;
+
+      @include breakpoint(500px) {
+        @include inline-block;
+        margin-right: 1em;
+      }
+    }
+
+    a {
+      font-weight: 700;
+      @include font-size(1.8);
+    }
+  }
+}

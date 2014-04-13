@@ -23,7 +23,7 @@ scripts[] = js/icc.behaviors.js
 ; ========================================
 regions[branding] = Branding
 regions[header] = Header
-regions[navigation] = Navigation
+regions[navigation] = Navigation Bar
 regions[highlighted] = Highlighted
 regions[help] = Help
 regions[content] = Content
