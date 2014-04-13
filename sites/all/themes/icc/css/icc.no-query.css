@@ -20,7 +20,8 @@
 /* No files to import found in abstractions/**\/* */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_media\.scss}line{font-family:\000031}}
 img, media {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\000033}}
 html {
