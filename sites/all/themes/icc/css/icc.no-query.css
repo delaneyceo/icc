@@ -24,7 +24,8 @@ img, media {
   height: auto; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\000033}}
-html {
+.front body {
+  text-align: center;
   background: url("../images/body_backgrounds/rope_shoes.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -33,11 +34,7 @@ html {
   background-size: cover;
   font-family: 'Raleway', sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\0000310}}
-body {
-  text-align: center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\0000311}}
 .coming-soon {
   display: block;
   margin-top: 1em;

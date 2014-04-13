@@ -1,14 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900,100);
 
-html {
+.front body {
+  text-align: center;
   background: url('../images/body_backgrounds/rope_shoes.jpg');
   background-repeat: no-repeat;
   @include background-size(cover);
   font-family: 'Raleway', sans-serif;
-}
-
-body {
-  text-align: center;
 }
 
 .coming-soon {
