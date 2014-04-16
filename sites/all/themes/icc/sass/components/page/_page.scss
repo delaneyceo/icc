@@ -5,6 +5,17 @@
   @include box-sizing(border-box);
 }
 
+.container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @include breakpoint($page-max-width) {
+    padding: 2em 0;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
@@ -13,7 +24,5 @@ body {
   font-family: $base-font-stack;
   @include font-size($base-font-size);
   color: $base-font-color;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }

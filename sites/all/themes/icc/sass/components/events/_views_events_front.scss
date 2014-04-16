@@ -1,0 +1,10 @@
+.pane-events-events-front {
+  @include views-title-icon($fa-var-calendar-o);
+
+  .views-field-event-date {
+    font-weight: 700;
+    color: $icc-brown;
+    padding-right: .3em;
+    border-right: 1px solid $gray-light;
+  }
+}

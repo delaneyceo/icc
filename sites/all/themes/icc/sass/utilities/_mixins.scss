@@ -101,3 +101,69 @@
   font-size: $sizeValue + rem;
 }
 
+@mixin views-title-icon($icon) {
+  line-height: normal;
+  margin-bottom: 2em;
+
+  .pane-title {
+    margin-bottom: 0;
+    margin-top: 5px;
+    @include pie-clearfix;
+
+    &:before {
+      margin-top: -12px;
+      @include icon($icon);
+      padding: .8em;
+      text-align: center;
+      background-color: $icc-orange;
+      @include border-radius(50%);
+      color: #fff;
+      float: left;
+      overflow: hidden;
+      margin-right: 15px;
+      position: relative;
+      top: 5px;
+    }
+  }
+
+  .view-header {
+  margin-top: -32px;
+  margin-bottom: 20px;
+  }
+
+  .view-content {
+    border-top: 1px solid $gray-light;
+  }
+
+  .views-row {
+    border-bottom: 1px solid $gray-light;
+    padding: .7em 0;
+  }
+
+  .views-row-last {
+    margin-bottom: 1em;
+  }
+
+  .more-link {
+    text-align: center;
+
+    a {
+      color: $icc-orange;
+      font-weight: 700;
+
+      &:before,
+      &:after {
+        margin: 0 .3em;
+      }
+
+      &:before {
+        @include icon($fa-var-angle-double-right);
+      }
+
+      &:after {
+        @include icon($fa-var-angle-double-left);
+      }
+    }
+  }
+}
+

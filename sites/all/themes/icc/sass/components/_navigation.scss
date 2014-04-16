@@ -1,5 +1,8 @@
-.block--system-main-menu {
-  @include breakpoint(500px) {
+$menu-expanded: 40em;
+
+.block--responsive-navigation-1 {
+  clear: left;
+  @include breakpoint($menu-expanded) {
     float: right;
   }
 
@@ -7,16 +10,36 @@
     @include element-invisible;
   }
 
-  .menu {
-    margin: 0;
-    padding: 0;
+  #nav-toggle {
+    font-size: 0;
+    float: right;
+    position: relative;
+    top: -20px;
+
+    &:before {
+      font-size: 18px;
+      @include icon($fa-var-bars);
+      background: #fff;
+      padding: 10px;
+      color: $icc-orange;
+      @include border-radius(3px);
+    }
+  }
+
+  #nav {
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
 
     li {
       list-style-image: none;
       list-style-type: none;
 
-      @include breakpoint(500px) {
+      @include breakpoint($menu-expanded) {
         @include inline-block;
+        width: auto;
         margin-right: 1em;
       }
     }

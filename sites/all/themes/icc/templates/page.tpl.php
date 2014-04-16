@@ -71,7 +71,7 @@
  */
 ?>
 <div class="l-page">
-  <header class="l-header" role="banner">
+  <header class="l-header" role="banner"><div class="container clearfix">
     <div class="l-branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -94,9 +94,9 @@
 
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
-  </header>
+  </div></header>
 
-  <div class="l-main">
+  <div class="l-main"><div class="container">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -118,9 +118,9 @@
 
     <?php print render($page['sidebar_first']); ?>
     <?php print render($page['sidebar_second']); ?>
-  </div>
+  </div></div>
 
-  <footer class="l-footer" role="contentinfo">
+  <footer class="l-footer" role="contentinfo"><div class="container">
     <?php print render($page['footer']); ?>
-  </footer>
+  </div></footer>
 </div>

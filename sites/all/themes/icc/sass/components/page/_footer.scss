@@ -1,0 +1,7 @@
+.l-footer {
+  @extend %font-smoothing;
+  background: $icc-green;
+  @include box-shadow(0px 500px 0px 500px $icc-green);
+  color: #fff;
+  padding: 2em 0;
+}

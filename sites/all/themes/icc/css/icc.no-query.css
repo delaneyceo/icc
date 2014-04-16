@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900,100);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900,100);
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ace\/\.rvm\/gems\/ruby-1\.9\.3-p484\@omega\.icc\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_box-sizing\.scss}line{font-family:\0000334}}
 *,
 *:before,
@@ -18,6 +17,36 @@
   box-sizing: border-box;
   *behavior: url('../behaviors/box-sizing/boxsizing.php'); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_classes\.scss}line{font-family:\000033}}
+.l-footer, .l-header {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_classes\.scss}line{font-family:\000039}}
+.view-display-id-events_page .views-row, .view-display-id-news_page .views-row {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 3px solid #dbdbda; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_classes\.scss}line{font-family:\0000315}}
+.view-display-id-events_page .views-field-title h2, .view-display-id-news_page .views-field-title h2 {
+  margin-bottom: .2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_classes\.scss}line{font-family:\0000319}}
+.view-display-id-events_page .views-field-view-node a, .view-display-id-news_page .views-field-view-node a {
+  font-size: 14px;
+  font-size: 1.4rem;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background: #c56d28;
+  color: #fff;
+  padding: .3em 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_classes\.scss}line{font-family:\0000327}}
+.view-display-id-events_page .views-field-body, .view-display-id-news_page .views-field-body {
+  margin: 1em 0; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("fonts/fontawesome/fontawesome-webfont.eot?v=4.0.0");
@@ -32,51 +61,432 @@ img, media {
   height: auto; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_typography\.scss}line{font-family:\000031}}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 12px 0;
+  color: #563a1b;
+  line-height: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_typography\.scss}line{font-family:\000037}}
+h3, h4, h5, h6 {
+  font-size: 19px;
+  font-size: 1.9rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_typography\.scss}line{font-family:\0000311}}
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #747d40; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\000033}}
-.front body {
-  text-align: center;
-  background: url("../images/body_backgrounds/rope_shoes.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Raleway', sans-serif; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\0000311}}
-.coming-soon {
-  display: block;
-  margin-top: 1em;
-  color: #fff;
-  font-size: 40px;
-  font-weight: 800; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\000036}}
-.block--system-main-menu .block__title {
-  border: 0;
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000310}}
-.block--system-main-menu .menu {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_breadcrumb\.scss}line{font-family:\000031}}
+.breadcrumb {
+  font-weight: 700;
   margin: 0;
   padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000314}}
-  .block--system-main-menu .menu li {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_breadcrumb\.scss}line{font-family:\000036}}
+  .breadcrumb li {
+    font-size: 14px;
+    font-size: 1.4rem;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_breadcrumb\.scss}line{font-family:\0000312}}
+  .breadcrumb .breadcrumb-seperator {
+    margin: 0 .5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_flexslider\.scss}line{font-family:\000031}}
+.flexslider {
+  margin: 0;
+  background: transparent;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+  border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_flexslider\.scss}line{font-family:\000038}}
+  .flexslider .views-field-field-image {
+    max-height: 450px;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_flexslider\.scss}line{font-family:\0000312}}
+    .flexslider .views-field-field-image img {
+      margin-top: -300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_flexslider\.scss}line{font-family:\0000317}}
+  .flexslider .flex-caption {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_flexslider\.scss}line{font-family:\0000327}}
+  .flexslider .container {
+    align-self: center;
+    max-width: 700px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_flexslider\.scss}line{font-family:\0000332}}
+  .flexslider .slideshow-title {
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 600; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_flexslider\.scss}line{font-family:\0000337}}
+  .flexslider .slideshow-cta {
+    text-align: center;
+    margin-top: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_flexslider\.scss}line{font-family:\0000341}}
+    .flexslider .slideshow-cta a {
+      background: #c56d28;
+      color: #fff;
+      font-weight: 700;
+      padding: .5em;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\000036}}
+.front .container {
+  *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ace\/\.rvm\/gems\/ruby-1\.9\.3-p484\@omega\.icc\/gems\/compass-0\.12\.5\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .front .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\0000313}}
+.front .hero-region--first {
+  border-bottom: 6px solid #747d40; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_front\.scss}line{font-family:\0000317}}
+.front .hero-region--second {
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\000033}}
+.block--responsive-navigation-1 {
+  clear: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\000039}}
+  .block--responsive-navigation-1 .block__title {
+    border: 0;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000313}}
+  .block--responsive-navigation-1 #nav-toggle {
+    font-size: 0;
+    float: right;
+    position: relative;
+    top: -20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000319}}
+    .block--responsive-navigation-1 #nav-toggle:before {
+      font-size: 18px;
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: inherit;
+      -webkit-font-smoothing: antialiased;
+      *margin-right: .3em;
+      content: "\f0c9";
+      background: #fff;
+      padding: 10px;
+      color: #c56d28;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000331}}
+  .block--responsive-navigation-1 #nav ul {
+    margin: 0;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000336}}
+  .block--responsive-navigation-1 #nav li {
     list-style-image: none;
     list-style-type: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000324}}
-  .block--system-main-menu .menu a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000347}}
+  .block--responsive-navigation-1 #nav a {
     font-weight: 700;
     font-size: 18px;
     font-size: 1.8rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/cta\/_cta_front\.scss}line{font-family:\000031}}
+.front .pane-call-to-action-links-cta-links {
+  line-height: normal;
+  margin-bottom: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003108}}
+  .front .pane-call-to-action-links-cta-links .pane-title {
+    margin-bottom: 0;
+    margin-top: 5px;
+    *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ace\/\.rvm\/gems\/ruby-1\.9\.3-p484\@omega\.icc\/gems\/compass-0\.12\.5\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+    .front .pane-call-to-action-links-cta-links .pane-title:after {
+      content: "";
+      display: table;
+      clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003113}}
+    .front .pane-call-to-action-links-cta-links .pane-title:before {
+      margin-top: -12px;
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: inherit;
+      -webkit-font-smoothing: antialiased;
+      *margin-right: .3em;
+      content: "\f0c0";
+      padding: .8em;
+      text-align: center;
+      background-color: #c56d28;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      color: #fff;
+      float: left;
+      overflow: hidden;
+      margin-right: 15px;
+      position: relative;
+      top: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003129}}
+  .front .pane-call-to-action-links-cta-links .view-header {
+    margin-top: -32px;
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003134}}
+  .front .pane-call-to-action-links-cta-links .view-content {
+    border-top: 1px solid #dbdbda; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003138}}
+  .front .pane-call-to-action-links-cta-links .views-row {
+    border-bottom: 1px solid #dbdbda;
+    padding: .7em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003143}}
+  .front .pane-call-to-action-links-cta-links .views-row-last {
+    margin-bottom: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003147}}
+  .front .pane-call-to-action-links-cta-links .more-link {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003150}}
+    .front .pane-call-to-action-links-cta-links .more-link a {
+      color: #c56d28;
+      font-weight: 700; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003155}}
+      .front .pane-call-to-action-links-cta-links .more-link a:before, .front .pane-call-to-action-links-cta-links .more-link a:after {
+        margin: 0 .3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003159}}
+      .front .pane-call-to-action-links-cta-links .more-link a:before {
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: inherit;
+        -webkit-font-smoothing: antialiased;
+        *margin-right: .3em;
+        content: "\f101"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003163}}
+      .front .pane-call-to-action-links-cta-links .more-link a:after {
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: inherit;
+        -webkit-font-smoothing: antialiased;
+        *margin-right: .3em;
+        content: "\f100"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/events\/_views_events_front\.scss}line{font-family:\000031}}
+.pane-events-events-front {
+  line-height: normal;
+  margin-bottom: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003108}}
+  .pane-events-events-front .pane-title {
+    margin-bottom: 0;
+    margin-top: 5px;
+    *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ace\/\.rvm\/gems\/ruby-1\.9\.3-p484\@omega\.icc\/gems\/compass-0\.12\.5\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+    .pane-events-events-front .pane-title:after {
+      content: "";
+      display: table;
+      clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003113}}
+    .pane-events-events-front .pane-title:before {
+      margin-top: -12px;
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: inherit;
+      -webkit-font-smoothing: antialiased;
+      *margin-right: .3em;
+      content: "\f133";
+      padding: .8em;
+      text-align: center;
+      background-color: #c56d28;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      color: #fff;
+      float: left;
+      overflow: hidden;
+      margin-right: 15px;
+      position: relative;
+      top: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003129}}
+  .pane-events-events-front .view-header {
+    margin-top: -32px;
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003134}}
+  .pane-events-events-front .view-content {
+    border-top: 1px solid #dbdbda; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003138}}
+  .pane-events-events-front .views-row {
+    border-bottom: 1px solid #dbdbda;
+    padding: .7em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003143}}
+  .pane-events-events-front .views-row-last {
+    margin-bottom: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003147}}
+  .pane-events-events-front .more-link {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003150}}
+    .pane-events-events-front .more-link a {
+      color: #c56d28;
+      font-weight: 700; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003155}}
+      .pane-events-events-front .more-link a:before, .pane-events-events-front .more-link a:after {
+        margin: 0 .3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003159}}
+      .pane-events-events-front .more-link a:before {
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: inherit;
+        -webkit-font-smoothing: antialiased;
+        *margin-right: .3em;
+        content: "\f101"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003163}}
+      .pane-events-events-front .more-link a:after {
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: inherit;
+        -webkit-font-smoothing: antialiased;
+        *margin-right: .3em;
+        content: "\f100"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/events\/_views_events_front\.scss}line{font-family:\000034}}
+  .pane-events-events-front .views-field-event-date {
+    font-weight: 700;
+    color: #563a1b;
+    padding-right: .3em;
+    border-right: 1px solid #dbdbda; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/events\/_views_events_page\.scss}line{font-family:\000032}}
+.view-display-id-events_page .view-header {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 200; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/news\/_views_news_front\.scss}line{font-family:\000031}}
+.pane-news-news-front {
+  line-height: normal;
+  margin-bottom: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003108}}
+  .pane-news-news-front .pane-title {
+    margin-bottom: 0;
+    margin-top: 5px;
+    *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ace\/\.rvm\/gems\/ruby-1\.9\.3-p484\@omega\.icc\/gems\/compass-0\.12\.5\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+    .pane-news-news-front .pane-title:after {
+      content: "";
+      display: table;
+      clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003113}}
+    .pane-news-news-front .pane-title:before {
+      margin-top: -12px;
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: inherit;
+      -webkit-font-smoothing: antialiased;
+      *margin-right: .3em;
+      content: "\f036";
+      padding: .8em;
+      text-align: center;
+      background-color: #c56d28;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      color: #fff;
+      float: left;
+      overflow: hidden;
+      margin-right: 15px;
+      position: relative;
+      top: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003129}}
+  .pane-news-news-front .view-header {
+    margin-top: -32px;
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003134}}
+  .pane-news-news-front .view-content {
+    border-top: 1px solid #dbdbda; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003138}}
+  .pane-news-news-front .views-row {
+    border-bottom: 1px solid #dbdbda;
+    padding: .7em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003143}}
+  .pane-news-news-front .views-row-last {
+    margin-bottom: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003147}}
+  .pane-news-news-front .more-link {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003150}}
+    .pane-news-news-front .more-link a {
+      color: #c56d28;
+      font-weight: 700; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003155}}
+      .pane-news-news-front .more-link a:before, .pane-news-news-front .more-link a:after {
+        margin: 0 .3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003159}}
+      .pane-news-news-front .more-link a:before {
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: inherit;
+        -webkit-font-smoothing: antialiased;
+        *margin-right: .3em;
+        content: "\f101"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_mixins\.scss}line{font-family:\00003163}}
+      .pane-news-news-front .more-link a:after {
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: inherit;
+        -webkit-font-smoothing: antialiased;
+        *margin-right: .3em;
+        content: "\f100"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/news\/_views_news_page\.scss}line{font-family:\000032}}
+.view-display-id-news_page .view-header {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 200; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_footer\.scss}line{font-family:\000031}}
+.l-footer {
+  background: #747d40;
+  -webkit-box-shadow: 0px 500px 0px 500px #747d40;
+  -moz-box-shadow: 0px 500px 0px 500px #747d40;
+  box-shadow: 0px 500px 0px 500px #747d40;
+  color: #fff;
+  padding: 2em 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\000031}}
 .l-header {
@@ -84,25 +494,37 @@ a {
   color: #fff;
   min-height: 60px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\000037}}
+  .l-header .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000313}}
   .l-header a {
     color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000317}}
   .l-header .site-name {
     margin: 0;
     font-weight: 600;
     font-size: 20px;
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding-top: 20px; }
 
 /* apply a natural box layout model to all elements */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\000038}}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000319}}
 html {
   font-size: 62.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000323}}
 body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
-  color: #563a1b;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  color: #555555;
+  line-height: 1.6; }

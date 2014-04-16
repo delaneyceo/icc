@@ -1,1 +1,30 @@
 @import "mixins";
+
+%font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%views-teaser-listing {
+  .views-row {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid $gray-light;
+  }
+
+  .views-field-title h2 {
+    margin-bottom: .2em;
+  }
+
+  .views-field-view-node a {
+    @include font-size(1.4);
+    @include inline-block;
+    background: $icc-orange;
+    color: #fff;
+    padding: .3em 1em;
+  }
+
+  .views-field-body {
+    margin: 1em 0;
+  }
+}

@@ -1,0 +1,8 @@
+.view-display-id-news_page {
+  .view-header {
+    @include font-size(2.4);
+    font-weight: 200;
+  }
+
+  @extend %views-teaser-listing;
+}
