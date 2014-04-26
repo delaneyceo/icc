@@ -20,10 +20,10 @@
           label: value['responsive_navigation_label'], // String: Label for the navigation toggle
           insert: value['responsive_navigation_insert'], // String: Insert the toggle before or after the navigation
           openPos: value['responsive_navigation_openpos'], // String: Position of the opened nav, relative or static
-          jsClass: value['responsive_navigation_jsclass'], // String: 'JS enabled' class which is added to <html> el
+          jsClass: value['responsive_navigation_jsclass'] // String: 'JS enabled' class which is added to <html> el
         });
       });
-    },
+    }
   };
 
 }(jQuery));

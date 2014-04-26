@@ -6,7 +6,7 @@
  * Implements the configuration screen.
  */
 
-module_load_include('inc', 'responsive_navigation', 'responsive_navigation_common');
+include_once 'responsive_navigation_common.inc';
 
 /**
  * Settings form as implemented by hook_menu.
@@ -14,7 +14,7 @@ module_load_include('inc', 'responsive_navigation', 'responsive_navigation_commo
 function responsive_navigation_admin_settings($form, &$form_state) {
   $form['responsive_navigation_number'] = array(
     '#type' => 'select',
-    '#description' => t('<b>NOTE: responsive-nav.js only supports one navigation menu. This setting will be increased when responsive-nav.js supports more than one.</b><br />Enter the total number of independent Responsive Navigation menu blocks you want. Enter a number between 0 and 1. If you set this to 0, you will have no blocks created but you can still use the !rnjs theme functions and Javascript/CSS directly in your theme.', array('!rnjs' => l(RNJS_MAIN_JS, RNJS_SITE_URL))),
+    '#description' => '<b>' . t('NOTE: responsive-nav.js only supports one navigation menu. This setting will be increased when responsive-nav.js supports more than one.') . '</b><br />' . t('Enter the total number of independent Responsive Navigation menu blocks you want. Enter a number between 0 and 1. If you set this to 0, you will have no blocks created but you can still use the !rnjs theme functions and Javascript/CSS directly in your theme.', array('!rnjs' => l(RNJS_MAIN_JS, RNJS_SITE_URL))),
     '#default_value' => variable_get('responsive_navigation_number', '1'),
     '#options' => drupal_map_assoc(range(0, 1)),
     '#size' => 1,

@@ -5,7 +5,7 @@
  * Drush integration for responsive-nav.js.
  */
 
-module_load_include('inc', 'responsive_navigation', 'responsive_navigation_common');
+include_once 'responsive_navigation_common.inc';
 
 /**
  * Implements hook_drush_command().
