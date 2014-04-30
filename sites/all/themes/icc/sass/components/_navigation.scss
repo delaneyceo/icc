@@ -3,7 +3,9 @@ $menu-expanded: 40em;
 .block--responsive-navigation-1 {
   clear: left;
   @include breakpoint($menu-expanded) {
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .block__title {
@@ -14,7 +16,7 @@ $menu-expanded: 40em;
     font-size: 0;
     float: right;
     position: relative;
-    top: -20px;
+    top: 48px;
 
     &:before {
       font-size: 18px;
@@ -32,6 +34,10 @@ $menu-expanded: 40em;
     ul {
       margin: 0;
       padding: 0;
+
+      ul {
+        display: none;
+      }
     }
 
     li {
@@ -41,13 +47,12 @@ $menu-expanded: 40em;
       @include breakpoint($menu-expanded) {
         @include inline-block;
         width: auto;
-        margin-right: 1em;
+        margin: 0 .7em .5em;
       }
     }
 
     a {
       font-weight: 700;
-      @include font-size(1.8);
     }
   }
 }

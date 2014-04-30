@@ -55,6 +55,20 @@
   font-style: normal; }
 
 /* No files to import found in abstractions/**\/* */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_forms\.scss}line{font-family:\000031}}
+input {
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_forms\.scss}line{font-family:\000037}}
+.form-text,
+.form-textarea,
+.form-submit {
+  padding: .5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_forms\.scss}line{font-family:\0000311}}
+.form-submit {
+  font-weight: 700; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/base\/_media\.scss}line{font-family:\000031}}
 img, media {
   max-width: 100%;
@@ -197,8 +211,10 @@ a {
   @media (min-width: 40em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\000033}}
     .block--responsive-navigation-1 {
-      float: right; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\000039}}
+      position: absolute;
+      bottom: 0;
+      right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000311}}
   .block--responsive-navigation-1 .block__title {
     border: 0;
     height: 1px;
@@ -208,13 +224,13 @@ a {
     width: 1px;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000315}}
   .block--responsive-navigation-1 #nav-toggle {
     font-size: 0;
     float: right;
     position: relative;
-    top: -20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000319}}
+    top: 48px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000321}}
     .block--responsive-navigation-1 #nav-toggle:before {
       font-size: 18px;
       font-family: FontAwesome;
@@ -232,16 +248,19 @@ a {
       -ms-border-radius: 3px;
       -o-border-radius: 3px;
       border-radius: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000334}}
   .block--responsive-navigation-1 #nav ul {
     margin: 0;
     padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000338}}
+    .block--responsive-navigation-1 #nav ul ul {
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000343}}
   .block--responsive-navigation-1 #nav li {
     list-style-image: none;
     list-style-type: none; }
     @media (min-width: 40em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000343}}
       .block--responsive-navigation-1 #nav li {
         display: -moz-inline-stack;
         display: inline-block;
@@ -250,12 +269,10 @@ a {
         zoom: 1;
         *display: inline;
         width: auto;
-        margin-right: 1em; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000347}}
+        margin: 0 .7em .5em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000354}}
   .block--responsive-navigation-1 #nav a {
-    font-weight: 700;
-    font-size: 18px;
-    font-size: 1.8rem; }
+    font-weight: 700; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/cta\/_cta_front\.scss}line{font-family:\000031}}
 .front .pane-call-to-action-links-cta-links {
@@ -531,22 +548,38 @@ a {
 .l-header {
   background: #c56d28;
   color: #fff;
-  min-height: 60px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\000037}}
+  min-height: 60px;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\000038}}
   .l-header .container {
     padding-top: 0;
     padding-bottom: 0;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000314}}
+  .l-header .icon-icc-logo {
+    font-size: 110px;
+    font-size: 11rem;
+    color: #fff;
+    line-height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000319}}
+    .l-header .icon-icc-logo:before {
+      width: 100%;
+      margin: 0;
+      text-align: left;
+      padding: 10px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000327}}
   .l-header a {
     color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000317}}
-  .l-header .site-name {
-    margin: 0;
-    font-weight: 600;
-    font-size: 20px;
-    font-size: 2rem;
-    padding-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_header\.scss}line{font-family:\0000331}}
+  .l-header .site-name a {
+    border: 0;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px); }
 
 /* apply a natural box layout model to all elements */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\000038}}

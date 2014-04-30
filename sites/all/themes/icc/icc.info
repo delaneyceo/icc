@@ -6,7 +6,7 @@ engine = phptemplate
 core = 7.x
 
 ; ========================================
-; Layouts
+; Plugins
 ; ========================================
 plugins[panels][layouts] = layouts/panel_layouts
 
@@ -17,6 +17,7 @@ stylesheets[all][] = css/icc.normalize.css
 stylesheets[all][] = css/icc.hacks.css
 stylesheets[all][] = css/icc.styles.css
 stylesheets[all][] = css/icc.no-query.css
+stylesheets[all][] = css/fonts/icc/css/icc.css
 
 ; ========================================
 ; Scripts
@@ -40,7 +41,7 @@ regions[footer] = Footer
 ; Settings
 ; ========================================
 settings[toggle_logo] = 0
-settings[toggle_name] = 1
+settings[toggle_name] = 0
 settings[toggle_slogan] = 0
 settings[toggle_node_user_picture] = 1
 settings[toggle_comment_user_picture] = 1

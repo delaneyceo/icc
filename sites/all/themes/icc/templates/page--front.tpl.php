@@ -73,6 +73,7 @@
 <div class="l-page">
   <header class="l-header" role="banner"><div class="container">
     <div class="l-branding">
+      <i class="icon-icc-logo"></i>
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       <?php endif; ?>

@@ -73,9 +73,6 @@
 <div class="l-page">
   <header class="l-header" role="banner"><div class="container clearfix">
     <div class="l-branding">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-      <?php endif; ?>
 
       <?php if ($site_name || $site_slogan): ?>
         <?php if ($site_name): ?>
@@ -94,6 +91,10 @@
 
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
+
+    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo">
+      <i class="icon-icc-logo"></i>
+    </a>
   </div></header>
 
   <div class="l-main"><div class="container">
