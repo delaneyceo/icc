@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: $base-font-stack;
-  @include font-size($base-font-size);
+  font-size: 1.6em;
   color: $base-font-color;
   line-height: 1.6;
 }
@@ -39,9 +39,6 @@ body {
 }
 
 .page-title-wrapper {
-
-  background: url('../images/body_backgrounds/rope_shoes.jpg');
-  background-size: cover;
   position: relative;
 
   &:after {

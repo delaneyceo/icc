@@ -18,7 +18,7 @@
   *behavior: url('../behaviors/box-sizing/boxsizing.php'); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_classes\.scss}line{font-family:\000033}}
-.l-footer, .l-header, .page-title-wrapper .page-title {
+.view-display-id-crags_listing .views-field-title a, .l-footer, .l-header, .page-title-wrapper .page-title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -237,6 +237,30 @@ a {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/_navigation\.scss}line{font-family:\0000352}}
   .block--responsive-navigation-1 #nav a {
     font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\000033}}
+.view-display-id-crags_listing {
+  *zoom: 1;
+  padding: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ace\/\.rvm\/gems\/ruby-1\.9\.3-p484\@omega\.icc\/gems\/compass-0\.12\.5\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .view-display-id-crags_listing:after {
+    content: "";
+    display: table;
+    clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000329}}
+  .view-display-id-crags_listing .views-field-title h2 {
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000333}}
+  .view-display-id-crags_listing .views-field-title a {
+    display: block;
+    background: #747d40;
+    color: #fff;
+    padding: 1em;
+    font-size: 14px;
+    font-size: 1.4rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000343}}
+  .view-display-id-crags_listing img {
+    width: 100%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/cta\/_cta_front\.scss}line{font-family:\000031}}
 .front .pane-call-to-action-links-cta-links {
@@ -572,10 +596,8 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000341}}
 .page-title-wrapper {
-  background: url("../images/body_backgrounds/rope_shoes.jpg");
-  background-size: cover;
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000344}}
   .page-title-wrapper:after {
     content: "";
     position: absolute;
@@ -584,24 +606,24 @@ body {
     background: rgba(38, 41, 21, 0.8);
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000354}}
   .page-title-wrapper .page-title {
     position: relative;
     z-index: 99;
     color: #fff;
     padding: 2em 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000366}}
     .page-title-wrapper .page-title h1, .page-title-wrapper .page-title a {
       color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000370}}
     .page-title-wrapper .page-title h1 {
       font-size: 40px;
       font-size: 4rem;
       margin-bottom: .3em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000376}}
   .page-title-wrapper .title_sffix {
     line-height: 1.2;
     margin-bottom: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000381}}
   .page-title-wrapper .fb-like {
     display: block; }
