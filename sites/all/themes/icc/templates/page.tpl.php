@@ -70,9 +70,29 @@
  * @see omega_preprocess_page()
  */
 ?>
+
+<?php if (isset($variables['fb_enable'])): ?>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=315649905226632";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+<?php endif; ?>
+
 <div class="l-page">
-  <header class="l-header" role="banner"><div class="container clearfix">
+  <header class="l-header" role="banner">
     <div class="l-branding">
+
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo">
+        <i class="icon-icc-logo"></i>
+      </a>
+
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+      <?php endif; ?>
 
       <?php if ($site_name || $site_slogan): ?>
         <?php if ($site_name): ?>
@@ -91,37 +111,44 @@
 
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
+  </header>
 
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo">
-      <i class="icon-icc-logo"></i>
-    </a>
-  </div></header>
+  <?php if ($title): ?>
+    <div class="page-title-wrapper">
+      <div class="page-title">
+        <?php print $breadcrumb; ?>
 
-  <div class="l-main"><div class="container">
+        <?php print render($title_prefix); ?>
+        <h1><?php print $title; ?></h1>
+        <div class="title_sffix"><?php print render($title_suffix); ?></div>
+        <?php if (isset($variables['fb_enable']) && !empty($variables['fb_path_to_content'])): ?>
+          <div class="fb-like" data-href="<?php print $variables['fb_path_to_content']; ?>" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+        <?php endif; ?>
+
+      </div>
+    </div>
+  <?php endif; ?>
+
+  <div class="l-main">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
 
     <?php print render($page['sidebar_first']); ?>
     <?php print render($page['sidebar_second']); ?>
-  </div></div>
+  </div>
 
-  <footer class="l-footer" role="contentinfo"><div class="container">
+  <footer class="l-footer" role="contentinfo">
     <?php print render($page['footer']); ?>
-  </div></footer>
+  </footer>
 </div>

@@ -18,6 +18,7 @@ stylesheets[all][] = css/icc.hacks.css
 stylesheets[all][] = css/icc.styles.css
 stylesheets[all][] = css/icc.no-query.css
 stylesheets[all][] = css/fonts/icc/css/icc.css
+stylesheets[all][] = css/fonts/fontawesome/css/font-awesome.min.css
 
 ; ========================================
 ; Scripts

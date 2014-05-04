@@ -3,7 +3,6 @@
 /**
  * Implements hook_process_page().
  */
-function icc_process_page(&$variables) {
-  // You can use process hooks to modify the variables before they are passed to
-  // the theme function or template file.
-}
+// function icc_process_page(&$variables) {
+
+// }

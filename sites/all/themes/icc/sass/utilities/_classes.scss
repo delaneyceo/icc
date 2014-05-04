@@ -28,3 +28,8 @@
     margin: 1em 0;
   }
 }
+
+%set-max-width {
+  max-width: $page-max-width;
+  margin: 0 auto;
+}

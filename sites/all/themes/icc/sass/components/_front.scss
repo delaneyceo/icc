@@ -10,15 +10,6 @@ $bp-float-col: 1125px;
     @include pie-clearfix;
   }
 
-  .hero-region--first {
-    border-bottom: 6px solid $icc-green;
-  }
-
-  .hero-region--second {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-
   .pane-call-to-action-links-cta-links {
     @include breakpoint($bp-float-col) {
       @include grid-span(1, 1);
