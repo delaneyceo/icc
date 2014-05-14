@@ -14,6 +14,7 @@ plugins[panels][layouts] = layouts/panel_layouts
 ; Stylesheets
 ; ========================================
 stylesheets[all][] = css/icc.normalize.css
+stylesheets[all][] = css/bootstrap.css
 stylesheets[all][] = css/icc.hacks.css
 stylesheets[all][] = css/icc.styles.css
 stylesheets[all][] = css/icc.no-query.css
@@ -24,6 +25,7 @@ stylesheets[all][] = css/fonts/fontawesome/css/font-awesome.min.css
 ; Scripts
 ; ========================================
 scripts[] = js/icc.behaviors.js
+scripts[] = js/bootstrap.min.js
 
 ; ========================================
 ; Regions

@@ -71,6 +71,7 @@
  */
 ?>
 
+<!-- Facebook javascript SDK -->
 <?php if (isset($variables['fb_enable'])): ?>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
@@ -121,11 +122,52 @@
         <?php print render($title_prefix); ?>
         <h1><?php print $title; ?></h1>
         <div class="title_sffix"><?php print render($title_suffix); ?></div>
+
         <?php if (isset($variables['fb_enable']) && !empty($variables['fb_path_to_content'])): ?>
           <div class="fb-like" data-href="<?php print $variables['fb_path_to_content']; ?>" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
         <?php endif; ?>
 
       </div>
+
+      <div class="bg_image-details"
+          <!-- Button trigger modal -->
+          <button class="btn btn-info" data-toggle="modal" data-target="#myModal">
+            <i class="fa fa-camera-retro"></i>
+            <span class="element-invisible">Photo Details</span>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">
+                    <?php print render($variables['bg_image_info']['title']); ?>
+                  </h4>
+                </div>
+                <?php if ($variables['bg_image_info']['caption'] || $variables['bg_image_info']['credit']): ?>
+                  <div class="modal-body">
+                    <?php
+                      print $variables['bg_image_info']['image_markup'];
+                    ?>
+                    <?php if ($variables['bg_image_info']['credit']): ?>
+                      <p>
+                        <small><i class="fa fa-camera fa-inline"></i><strong>Photographer</strong></small><br/>
+                        <?php print render($variables['bg_image_info']['credit']); ?>
+                      </p>
+                    <?php endif; ?>
+                    <?php if ($variables['bg_image_info']['caption']): ?>
+                      <small><i class="fa fa-picture-o fa-inline"></i><strong>Details</strong></small><br/>
+                      <p><?php print render($variables['bg_image_info']['caption']); ?></p>
+                    <?php endif; ?>
+                  </div>
+                <?php endif; ?>
+              </div>
+            </div>
+          </div>
+      </div>
+
     </div>
   <?php endif; ?>
 
@@ -133,11 +175,16 @@
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
+
+      <?php if ($messages || $tabs || $page['help'] || $action_links): ?>
+        <div class="container">
+          <?php print $messages; ?>
+          <?php print render($tabs); ?>
+          <?php print render($page['help']); ?>
+          <?php if ($action_links): ?>
+            <ul class="action-links"><?php print render($action_links); ?></ul>
+          <?php endif; ?>
+        </div>
       <?php endif; ?>
 
       <?php print render($page['content']); ?>

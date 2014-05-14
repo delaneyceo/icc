@@ -454,6 +454,7 @@ function bg_image_add_background_image_from_node($nid, $css_settings = array(), 
   }
 
   if (is_numeric($nid)) {
+    variable_set('bg_image_nid', $nid);
     // Load the node so we can check it's status
     $node = node_load($nid);
     // Check node access permissions

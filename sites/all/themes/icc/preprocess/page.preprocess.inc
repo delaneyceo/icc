@@ -25,11 +25,9 @@ function icc_preprocess_page(&$variables) {
     $variables['fb_path_to_content'] = $full_path;
   }
 
-
-
   // Page Title Caption Conditions
   if (isset($variables['node']->field_page_title_caption) && !empty($variables['node']->field_page_title_caption)) {
-    $node_page_caption = $variables['node']->field_page_title_caption['und'][0]['safe_value'];
+    $node_page_caption = $variables['node']->field_page_title_caption[LANGUAGE_NONE][0]['safe_value'];
     $variables['title_suffix'] = $node_page_caption;
   }
   else {
@@ -45,4 +43,23 @@ function icc_preprocess_page(&$variables) {
         break;
     }
   }
+
+  $bg_image_nid = variable_get('bg_image_nid');
+  $bg_image_node = node_load($bg_image_nid);
+
+  $bg_image = array(
+    'style_name' => 'large',
+    'path' => $bg_image_node->field_image[LANGUAGE_NONE][0]['uri'],
+    'alt' => $bg_image_node->field_image[LANGUAGE_NONE][0]['alt'],
+    'title' => $bg_image_node->field_image[LANGUAGE_NONE][0]['title'],
+    );
+  $bg_image_image = theme('image_style',$bg_image);
+
+  $bg_image_info = array(
+      'title' => $bg_image_node->title,
+      'credit' => $bg_image_node->field_photo_credit[LANGUAGE_NONE][0]['safe_value'],
+      'caption' => $bg_image_node->field_image_caption[LANGUAGE_NONE][0]['safe_value'],
+      'image_markup' => $bg_image_image
+    );
+  $variables['bg_image_info'] = $bg_image_info;
 }

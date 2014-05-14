@@ -18,7 +18,7 @@
   *behavior: url('../behaviors/box-sizing/boxsizing.php'); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_classes\.scss}line{font-family:\000033}}
-.view-display-id-crags_listing .views-field-title a, .l-footer, .l-header, .page-title-wrapper .page-title {
+.bg_image-details .modal-header, .bg_image-details small, .view-display-id-crags_listing .views-field-title a, .l-footer, .l-header, .page-title-wrapper .page-title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -279,6 +279,48 @@ a {
   .block--responsive-navigation-1 #nav a {
     font-weight: 700; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\000033}}
+.bg_image-details .modal-content {
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\000037}}
+.bg_image-details .modal-header {
+  background: #c56d28; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\0000311}}
+  .bg_image-details .modal-header h4 {
+    color: #fff;
+    font-weight: 600; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\0000317}}
+.bg_image-details .close {
+  font-size: 30px;
+  font-size: 3rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\0000321}}
+.bg_image-details .btn-info {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  padding: 2px 8px;
+  font-size: 20px;
+  font-size: 2rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\0000330}}
+.bg_image-details .fa-inline {
+  margin-right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\0000334}}
+.bg_image-details img {
+  width: 100%;
+  margin-bottom: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\0000339}}
+.bg_image-details small {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #999; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\000033}}
 .view-display-id-crags_listing {
   *zoom: 1;
@@ -313,16 +355,32 @@ a {
         margin-right: 0; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000329}}
   .view-display-id-crags_listing .views-field-title h2 {
-    margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000333}}
+    margin: 0;
+    padding: 1em;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000336}}
   .view-display-id-crags_listing .views-field-title a {
     display: block;
-    background: #747d40;
-    color: #fff;
-    padding: 1em;
-    font-size: 14px;
-    font-size: 1.4rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000343}}
+    background: #747d40; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000341}}
+    .view-display-id-crags_listing .views-field-title a * {
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000347}}
+    .view-display-id-crags_listing .views-field-title a:hover, .view-display-id-crags_listing .views-field-title a:focus, .view-display-id-crags_listing .views-field-title a:active {
+      background: #c56d28; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000350}}
+      .view-display-id-crags_listing .views-field-title a:hover img, .view-display-id-crags_listing .views-field-title a:focus img, .view-display-id-crags_listing .views-field-title a:active img {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+        opacity: 0.5;
+        -webkit-filter: grayscale(90%);
+        -moz-filter: grayscale(90%);
+        filter: grayscale(90%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000358}}
   .view-display-id-crags_listing img {
     width: 100%; }
 
@@ -665,7 +723,7 @@ body {
 .page-title-wrapper {
   position: relative; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000344}}
-  .page-title-wrapper:after {
+  .page-title-wrapper:before {
     content: "";
     position: absolute;
     width: 100%;

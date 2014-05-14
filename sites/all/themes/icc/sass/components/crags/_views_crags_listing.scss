@@ -28,15 +28,30 @@ $bp-float-col: 900px;
 
     h2 {
       margin: 0;
+      padding: 1em;
+      @include font-size(1.6);
+      color: #fff;
     }
 
     a {
       @extend %font-smoothing;
       display: block;
       background: $icc-green;
-      color: #fff;
-      padding: 1em;
-      @include font-size(1.4);
+
+      * {
+        @include transition(all .5s);
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: $icc-orange;
+
+        img {
+          @include opacity(.5);
+          @include filter(grayscale(90%));
+        }
+      }
     }
   }
 

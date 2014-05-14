@@ -41,7 +41,7 @@ body {
 .page-title-wrapper {
   position: relative;
 
-  &:after {
+  &:before {
     content: "";
     position: absolute;
     width: 100%;

@@ -31,3 +31,11 @@ function icc_breadcrumb(&$variables) {
     return $output;
   }
 }
+
+
+function icc_leaflet_map_info_alter(&$map_info) {
+  // Disable scroll wheel zoom for all maps
+  foreach ($map_info as $map_id => $info) {
+    $map_info[$map_id]['settings']['scrollWheelZoom'] = FALSE;
+  }
+}
