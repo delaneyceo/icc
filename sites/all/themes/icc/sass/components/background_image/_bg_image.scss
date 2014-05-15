@@ -9,7 +9,7 @@
     @extend %font-smoothing;
 
     h4 {
-      color: #fff;
+      color: $icc-gray;
       font-weight: 600;
     }
   }
@@ -18,13 +18,15 @@
     @include font-size(3);
   }
 
-  .btn-info {
+  .btn-photo-details {
     position: absolute;
     bottom: 10px;
     right: 10px;
     z-index: 99;
     padding: 2px 8px;
     @include font-size(2);
+    background-color: $icc-orange;
+    color: $icc-gray;
   }
 
   .fa-inline {

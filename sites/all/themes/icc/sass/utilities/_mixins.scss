@@ -107,17 +107,18 @@
 
   .pane-title {
     margin-bottom: 0;
-    margin-top: 5px;
+    @include font-size(2.5);
     @include pie-clearfix;
 
     &:before {
+      @include font-size(2.8);
       margin-top: -12px;
       @include icon($icon);
-      padding: .8em;
+      padding: .6em;
       text-align: center;
-      background-color: $icc-orange;
+      background-color: $icc-green;
       @include border-radius(50%);
-      color: #fff;
+      color: $icc-cream;
       float: left;
       overflow: hidden;
       margin-right: 15px;
@@ -127,16 +128,22 @@
   }
 
   .view-header {
-  margin-top: -32px;
+  margin-top: -18px;
   margin-bottom: 20px;
   }
 
-  .view-content {
-    border-top: 1px solid $gray-light;
+  .view-content,
+  .view-empty {
+    border-top: 1px solid $icc-orange;
+  }
+
+  .view-empty p {
+    border-bottom: 1px solid $icc-orange;
+    padding: .7em 0;
   }
 
   .views-row {
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $icc-orange;
     padding: .7em 0;
   }
 
@@ -148,21 +155,11 @@
     text-align: center;
 
     a {
-      color: $icc-orange;
-      font-weight: 700;
-
-      &:before,
-      &:after {
-        margin: 0 .3em;
-      }
-
-      &:before {
-        @include icon($fa-var-angle-double-right);
-      }
-
-      &:after {
-        @include icon($fa-var-angle-double-left);
-      }
+      @include font-size(1.4);
+      background-color: $icc-green;
+      color: $icc-cream;
+      font-weight: 600;
+      padding: .4em 1em;
     }
   }
 }

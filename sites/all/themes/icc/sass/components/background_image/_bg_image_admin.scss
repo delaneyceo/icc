@@ -1,0 +1,10 @@
+.page-node-add {
+  .l-content {
+    @extend %set-max-width;
+  }
+
+  .form-actions {
+    margin-bottom: 0;
+    padding-bottom: 2em;
+  }
+}

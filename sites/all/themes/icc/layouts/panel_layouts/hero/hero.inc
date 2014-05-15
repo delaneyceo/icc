@@ -30,7 +30,7 @@ function template_preprocess_hero(&$variables) {
 
     // Provide a container wrapper for the second region.
     if ($name == 'second') {
-      $variables['region_attributes_array'][$name]['class'][] = 'container';
+      //$variables['region_attributes_array'][$name]['class'][] = 'container';
     }
   }
 }

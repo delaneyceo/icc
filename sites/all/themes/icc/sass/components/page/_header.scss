@@ -1,14 +1,14 @@
 .l-header {
   @extend %font-smoothing;
-  background: $icc-orange;
+  background: $icc-gray;
   color: #fff;
   min-height: 60px;
   text-align: center;
   position: relative;
+  border-bottom: 1px solid $icc-orange;
 
   .icon-icc-logo {
     @include font-size(11);
-    color: #fff;
     line-height: 0;
 
     &:before {
@@ -20,7 +20,7 @@
   }
 
   a {
-    color: #fff;
+    color: $icc-orange;
   }
 
   .site-name a {

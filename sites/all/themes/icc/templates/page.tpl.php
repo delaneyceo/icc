@@ -131,7 +131,7 @@
 
       <div class="bg_image-details"
           <!-- Button trigger modal -->
-          <button class="btn btn-info" data-toggle="modal" data-target="#myModal">
+          <button class="btn btn-photo-details" data-toggle="modal" data-target="#myModal">
             <i class="fa fa-camera-retro"></i>
             <span class="element-invisible">Photo Details</span>
           </button>
@@ -176,16 +176,14 @@
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
 
-      <?php if ($messages || $tabs || $page['help'] || $action_links): ?>
-        <div class="container">
-          <?php print $messages; ?>
-          <?php print render($tabs); ?>
-          <?php print render($page['help']); ?>
-          <?php if ($action_links): ?>
-            <ul class="action-links"><?php print render($action_links); ?></ul>
-          <?php endif; ?>
-        </div>
-      <?php endif; ?>
+      <div class="l-main-tasks">
+        <?php print $messages; ?>
+        <?php print render($tabs); ?>
+        <?php print render($page['help']); ?>
+        <?php if ($action_links): ?>
+          <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+      </div>
 
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>

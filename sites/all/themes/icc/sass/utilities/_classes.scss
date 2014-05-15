@@ -9,7 +9,7 @@
   .views-row {
     margin-bottom: 2em;
     padding-bottom: 2em;
-    border-bottom: 3px solid $gray-light;
+    border-bottom: 1px solid $icc-orange;
   }
 
   .views-field-title h2 {
@@ -19,9 +19,10 @@
   .views-field-view-node a {
     @include font-size(1.4);
     @include inline-block;
-    background: $icc-orange;
-    color: #fff;
+    background: $icc-green;
+    color: $icc-cream;
     padding: .3em 1em;
+    font-weight: 600;
   }
 
   .views-field-body {

@@ -26,11 +26,14 @@ $bp-float-col: 900px;
 
   .views-field-title {
 
-    h2 {
+    .views-field-title-title {
       margin: 0;
       padding: 1em;
       @include font-size(1.6);
       color: #fff;
+      font-weight: 600;
+      @include box-shadow(0px 8px 8px -4px rgba(0,0,0,.3));
+      position: relative;
     }
 
     a {
@@ -45,7 +48,7 @@ $bp-float-col: 900px;
       &:hover,
       &:focus,
       &:active {
-        background: $icc-orange;
+        background: $icc-brown;
 
         img {
           @include opacity(.5);

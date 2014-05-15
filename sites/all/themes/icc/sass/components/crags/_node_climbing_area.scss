@@ -1,0 +1,40 @@
+.node-type-climbing-area {
+  .field--name-field-mountain-project-link {
+    a {
+      @extend %font-smoothing;
+      background: $mp-blue;
+      padding: .6em 1em;
+      color: #fff;
+      @include inline-block;
+      font-weight: 600;
+    }
+
+    a:before {
+      content: '\e801';
+      font-family: "icc";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+      margin-right: 1em;
+
+    }
+  }
+}

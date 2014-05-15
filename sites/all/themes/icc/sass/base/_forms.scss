@@ -3,6 +3,12 @@ input {
 }
 
 .form-text,
+.form-textarea, {
+  background: lighten($icc-cream, 5%);
+  border: 1px solid #aaa;
+}
+
+.form-text,
 .form-textarea,
 .form-submit {
   padding: .5em;

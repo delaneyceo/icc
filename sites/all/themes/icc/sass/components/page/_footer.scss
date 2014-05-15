@@ -1,6 +1,12 @@
 .l-footer {
   @extend %font-smoothing;
-  background: $icc-green;
-  @include box-shadow(0px 500px 0px 500px $icc-green);
+  background: $icc-gray;
+  @include box-shadow(0px 500px 0px 500px $icc-gray);
   color: #fff;
+  border-top: 10px solid $icc-orange;
+
+
+  .l-region--footer {
+    padding: 2em 0;
+  }
 }
