@@ -31,10 +31,10 @@ body {
 .l-main {
   border-top: 10px solid $icc-orange;
   background: $icc-cream;
+  padding: 0 $mobile-horz-spacing;
 
   @include breakpoint($page-max-width) {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0;
   }
 }
 

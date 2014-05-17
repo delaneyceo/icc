@@ -391,11 +391,17 @@ a {
   font-size: 13px;
   font-size: 1.3rem;
   color: #999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image\.scss}line{font-family:\0000348}}
+.bg_image-details .modal-footer {
+  background-color: #414141; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image_node_add\.scss}line{font-family:\000036}}
 .page-node-add .form-actions {
   margin-bottom: 0;
   padding-bottom: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/background_image\/_bg_image_node_add\.scss}line{font-family:\0000311}}
+.page-node-add .block-user-login {
+  display: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_node_climbing_area\.scss}line{font-family:\000033}}
 .node-type-climbing-area .field--name-field-mountain-project-link a {
@@ -878,12 +884,12 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000331}}
 .l-main {
   border-top: 10px solid #dba44a;
-  background: #f2e9d7; }
+  background: #f2e9d7;
+  padding: 0 20px; }
   @media (min-width: 900px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000331}}
     .l-main {
-      padding-top: 1em;
-      padding-bottom: 1em; } }
+      padding: 1em 0; } }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000341}}
 .l-main-tasks {

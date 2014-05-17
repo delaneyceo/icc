@@ -169,6 +169,10 @@
                     <?php endif; ?>
                   </div>
                 <?php endif; ?>
+                <div class="modal-footer">
+                  <a href="<?php print $base_path; ?>node/add/background-image" class="btn btn-primary">Submit Your Photo</a>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
