@@ -85,6 +85,12 @@
 
 <div class="l-page">
   <header class="l-header" role="banner">
+
+    <div class="header-cta">
+      <a href="https://www.facebook.com/IowaClimbers" title="facebook" class="fb-cta"><i class="fa fa-facebook-square"></i><span>Facebook</span></a>
+      <a href="<?php print $base_path ?>iowa-climbing" title="Go to Iowa Climbing Page" class="give-cta"><i class="fa fa-heart"></i><span>Join or Give</span></a>
+    </div>
+
     <div class="l-branding">
 
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo">
@@ -197,3 +203,4 @@
     <?php print render($page['footer']); ?>
   </footer>
 </div>
+

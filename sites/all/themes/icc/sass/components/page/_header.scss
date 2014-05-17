@@ -6,16 +6,23 @@
   text-align: center;
   position: relative;
   border-bottom: 1px solid $icc-orange;
+  @include clearfix;
+
+  .l-branding {
+    float: left;
+  }
+
+  .site-logo {
+    display: block;
+    padding: 1em 0;
+  }
 
   .icon-icc-logo {
     @include font-size(11);
     line-height: 0;
 
     &:before {
-      width: 100%;
-      margin: 0;
-      text-align: left;
-      padding: 10px 0;
+      display: inline;
     }
   }
 
@@ -23,7 +30,52 @@
     color: $icc-orange;
   }
 
-  .site-name a {
-    @include element-invisible;
+  .header-cta {
+    @include clearfix;
+
+    @include breakpoint($menu-big-desktop) {
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      margin-top: -15px;
+    }
+
+    .fb-cta {
+      border-right: 1px solid darken($icc-orange, 12%);
+
+      @include breakpoint($menu-big-desktop) {
+        border-right: none;
+      }
+    }
+
+    a {
+      display: block;
+      background: $icc-orange;
+      padding: .4em 1em;
+      color: $icc-gray;
+      font-weight: 800;
+      @extend %font-smoothing;
+      @include font-size(1.3);
+      width: 50%;
+      float: left;
+      @include transition(background .3s, color .3s);
+
+      @include breakpoint($menu-big-desktop) {
+        width: auto;
+        margin-left: 10px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: darken($icc-gray, 10);
+        color: $icc-orange;
+      }
+    }
+
+    i:before {
+      margin-right: 8px;
+      @include font-size(1.8);
+    }
   }
 }

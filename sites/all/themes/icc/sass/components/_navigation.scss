@@ -1,12 +1,27 @@
-$menu-expanded: 40em;
+@include breakpoint($menu-expanded) {
+  .js #nav {
+    position: relative;
+  }
+  .js #nav.closed {
+    max-height: none;
+  }
+  #nav-toggle {
+    display: none;
+  }
+}
+
+.l-region--navigation {
+  clear: both;
+
+  @include breakpoint($menu-expanded) {
+    float: left;
+    clear: none;
+    position: relative;
+    top: 60px;
+  }
+}
 
 .block--responsive-navigation-1 {
-  clear: left;
-  @include breakpoint($menu-expanded) {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
 
   .block__title {
     @include element-invisible;
@@ -14,14 +29,16 @@ $menu-expanded: 40em;
 
   #nav-toggle {
     font-size: 0;
-
+    position: absolute;
+    top: 90px;
+    right: 30px;;
 
     &:before {
       font-size: 18px;
       @include icon($fa-var-bars);
-      background: #fff;
       padding: 10px;
-      color: $icc-orange;
+      background: $icc-orange;
+      color: #fff;
       @include border-radius(3px);
     }
   }
@@ -51,6 +68,20 @@ $menu-expanded: 40em;
 
     a {
       font-weight: 700;
+      @include transition(background .3s);
+
+      @include breakpoint(0 $menu-expanded) {
+        background: darken($icc-gray, 5%);
+        padding: 1em;
+        display: block;
+        border-top: 1px solid darken($icc-gray, 6%);
+
+        &:hover,
+        &:focus,
+        &:active {
+          background: darken($icc-gray, 2%);
+        }
+      }
     }
   }
 }
