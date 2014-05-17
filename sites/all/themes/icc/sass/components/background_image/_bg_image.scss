@@ -21,7 +21,7 @@
   .btn-photo-details {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: $mobile-horz-spacing;
     z-index: 99;
     padding: 2px 8px;
     @include font-size(2);

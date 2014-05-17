@@ -28,64 +28,23 @@ body {
   line-height: 1.6;
 }
 
-.l-header,
-.page-title-wrapper,
-.l-footer {
-
-}
-
 .l-main {
   border-top: 10px solid $icc-orange;
   background: $icc-cream;
+
+  @include breakpoint($page-max-width) {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 }
 
 .l-main-tasks {
   @extend %set-max-width;
-  padding-top: 2em;
+  padding-top: $mobile-horz-spacing;
 }
 
-.page-title-wrapper {
-  position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(darken($icc-gray,7%),.9);
-    top: 0;
-    left: 0;
-    @include box-shadow(0px 15px 15px -5px rgba(0,0,0,.5) inset);
-  }
-
-  .page-title {
+.page-user {
+  .l-content {
     @extend %set-max-width;
-    position: relative;
-    z-index: 99;
-    color: #fff;
-    @extend %font-smoothing;
-    padding: 2em 0;
-
-    @include breakpoint($bp-tablet) {
-      padding: 5em 0;
-    }
-
-    h1, a {
-      color: #fff;
-    }
-
-    h1 {
-      @include font-size(4);
-      margin-bottom: .3em;
-    }
-  }
-
-  .title_sffix {
-    line-height: 1.2;
-    margin-bottom: 1em;
-  }
-
-  .fb-like {
-    display: block;
   }
 }

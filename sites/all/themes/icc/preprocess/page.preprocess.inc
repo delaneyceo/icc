@@ -33,13 +33,13 @@ function icc_preprocess_page(&$variables) {
   else {
     switch($path) {
       case 'iowa-climbing':
-        $variables['title_suffix'] = 'Mus phasellus amet! Scelerisque augue porttitor magnis';
+        $variables['title_suffix'] = 'Explore the best Iowa has to offer for the climber in everyone';
         break;
       case 'news':
         $variables['title_suffix'] = 'Stay up to date with the latest Iowa Climbers news';
         break;
       case 'events':
-        $variables['title_suffix'] = 'Don&#39;t miss out on our events';
+        $variables['title_suffix'] = 'Don&#39;t miss our next event';
         break;
     }
   }

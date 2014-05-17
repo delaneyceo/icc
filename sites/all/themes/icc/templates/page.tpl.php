@@ -183,8 +183,8 @@
       <a id="main-content"></a>
 
       <div class="l-main-tasks">
-        <?php print $messages; ?>
         <?php print render($tabs); ?>
+        <?php print $messages; ?>
         <?php print render($page['help']); ?>
         <?php if ($action_links): ?>
           <ul class="action-links"><?php print render($action_links); ?></ul>

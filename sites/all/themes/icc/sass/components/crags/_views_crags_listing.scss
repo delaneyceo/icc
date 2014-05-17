@@ -3,10 +3,9 @@ $bp-float-col: 900px;
 .view-display-id-crags_listing {
   $grids: 1;
   $grids: add-grid(12 at $bp-float-col);
-  $gutters: 1/3;
+  $gutters: $mobile-horz-spacing;
   @include pie-clearfix;
-
-  padding: 2em;
+  margin: 0 $mobile-horz-spacing;
 
   .views-row {
     @include breakpoint($bp-float-col) {
@@ -18,9 +17,8 @@ $bp-float-col: 900px;
 
       &:nth-child(3n+3) {
         @include float-span(4, 'last');
+        padding: 0;
       }
-
-      margin-bottom: 1.5em;
     }
   }
 
