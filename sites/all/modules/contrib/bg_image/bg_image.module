@@ -430,7 +430,6 @@ function bg_image_get_image_path_from_node($nid, $build_url = TRUE) {
 *    background
 */
 function bg_image_add_background_image_from_node($nid, $css_settings = array(), $image_style = NULL) {
-
   // We need to generate a random nid if 0 is passed in
   if ($nid == 0) {
     $type = variable_get('bg_image_node_type', '');
@@ -444,6 +443,7 @@ function bg_image_add_background_image_from_node($nid, $css_settings = array(), 
       }
       $nid = $query->fields('node', array('nid'))
         ->condition('node.type', $type)
+        ->condition('status', 1)
         ->orderRandom()
         ->execute()
         ->fetchField();
@@ -454,6 +454,7 @@ function bg_image_add_background_image_from_node($nid, $css_settings = array(), 
   }
 
   if (is_numeric($nid)) {
+    // Set a global variable for the bg_image node ID
     variable_set('bg_image_nid', $nid);
     // Load the node so we can check it's status
     $node = node_load($nid);

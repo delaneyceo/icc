@@ -48,18 +48,20 @@ function icc_preprocess_page(&$variables) {
   $bg_image_node = node_load($bg_image_nid);
 
   $bg_image = array(
-    'style_name' => 'large',
+    'style_name' => '600_wide',
     'path' => $bg_image_node->field_image[LANGUAGE_NONE][0]['uri'],
     'alt' => $bg_image_node->field_image[LANGUAGE_NONE][0]['alt'],
     'title' => $bg_image_node->field_image[LANGUAGE_NONE][0]['title'],
     );
   $bg_image_image = theme('image_style',$bg_image);
+  $bg_image_credit = !empty($bg_image_node->field_photo_credit) ? $bg_image_node->field_photo_credit[LANGUAGE_NONE][0]['safe_value'] : '';
+  $bg_image_caption = !empty($bg_image_node->field_image_caption) ? $bg_image_node->field_image_caption[LANGUAGE_NONE][0]['safe_value'] : '';
 
   $bg_image_info = array(
-      'title' => $bg_image_node->title,
-      'credit' => $bg_image_node->field_photo_credit[LANGUAGE_NONE][0]['safe_value'],
-      'caption' => $bg_image_node->field_image_caption[LANGUAGE_NONE][0]['safe_value'],
-      'image_markup' => $bg_image_image
-    );
+    'title' => $bg_image_node->title,
+    'credit' => $bg_image_credit,
+    'caption' => $bg_image_caption,
+    'image_markup' => $bg_image_image
+  );
   $variables['bg_image_info'] = $bg_image_info;
 }

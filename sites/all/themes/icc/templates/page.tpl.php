@@ -88,7 +88,7 @@
 
     <div class="header-cta">
       <a href="https://www.facebook.com/IowaClimbers" title="facebook" class="fb-cta"><i class="fa fa-facebook-square"></i><span>Facebook</span></a>
-      <a href="<?php print $base_path ?>iowa-climbing" title="Go to Iowa Climbing Page" class="give-cta"><i class="fa fa-heart"></i><span>Join or Give</span></a>
+      <a href="<?php print $base_path ?>join-or-give" title="Join or Give" class="give-cta"><i class="fa fa-heart"></i><span>Join or Give</span></a>
     </div>
 
     <div class="l-branding">
@@ -152,11 +152,9 @@
                     <?php print render($variables['bg_image_info']['title']); ?>
                   </h4>
                 </div>
-                <?php if ($variables['bg_image_info']['caption'] || $variables['bg_image_info']['credit']): ?>
-                  <div class="modal-body">
-                    <?php
-                      print $variables['bg_image_info']['image_markup'];
-                    ?>
+                <div class="modal-body">
+                  <?php print $variables['bg_image_info']['image_markup']; ?>
+                  <?php if ($variables['bg_image_info']['caption'] || $variables['bg_image_info']['credit']): ?>
                     <?php if ($variables['bg_image_info']['credit']): ?>
                       <p>
                         <small><i class="fa fa-camera fa-inline"></i><strong>Photographer</strong></small><br/>
@@ -167,8 +165,8 @@
                       <small><i class="fa fa-picture-o fa-inline"></i><strong>Details</strong></small><br/>
                       <p><?php print render($variables['bg_image_info']['caption']); ?></p>
                     <?php endif; ?>
-                  </div>
-                <?php endif; ?>
+                  <?php endif; ?>
+                </div>
                 <div class="modal-footer">
                   <a href="<?php print $base_path; ?>node/add/background-image" class="btn btn-primary">Submit Your Photo</a>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

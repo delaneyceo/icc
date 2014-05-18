@@ -50,7 +50,8 @@
   margin: 1em 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/utilities\/_classes\.scss}line{font-family:\0000333}}
-.page-node-add .l-content, .l-main-tasks, .page-user .l-content, .page-title-wrapper .page-title {
+.page-node-add .l-content, .l-main-tasks, .node-type-background-image .l-content,
+.page-user .l-content, .page-title-wrapper .page-title {
   max-width: 900px;
   margin: 0 auto; }
 
@@ -859,39 +860,34 @@ a {
 
 /* apply a natural box layout model to all elements */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\000038}}
-.container {
+.l-container {
   max-width: 900px;
   margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em; }
-  @media (min-width: 900px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\000038}}
-    .container {
-      padding-left: 0;
-      padding-right: 0; } }
+  padding-left: 0;
+  padding-right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000315}}
 html {
   font-size: 62.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000319}}
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6em;
   color: #555555;
   line-height: 1.6; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000326}}
 .l-main {
   border-top: 10px solid #dba44a;
   background: #f2e9d7;
-  padding: 0 20px; }
+  padding: 0 20px 1em 20px; }
   @media (min-width: 900px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000326}}
     .l-main {
       padding: 1em 0; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_page\.scss}line{font-family:\0000336}}
 .l-main-tasks {
   padding-top: 20px; }
 
@@ -926,13 +922,18 @@ body {
       color: #fff; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_title_wrapper\.scss}line{font-family:\0000332}}
     .page-title-wrapper .page-title h1 {
-      font-size: 40px;
-      font-size: 4rem;
+      font-size: 30px;
+      font-size: 3rem;
       margin-bottom: .3em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_title_wrapper\.scss}line{font-family:\0000338}}
+      @media (min-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_title_wrapper\.scss}line{font-family:\0000332}}
+        .page-title-wrapper .page-title h1 {
+          font-size: 40px;
+          font-size: 4rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_title_wrapper\.scss}line{font-family:\0000342}}
   .page-title-wrapper .title_sffix {
     line-height: 1.2;
     margin-bottom: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_title_wrapper\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/page\/_title_wrapper\.scss}line{font-family:\0000347}}
   .page-title-wrapper .fb-like {
     display: block; }

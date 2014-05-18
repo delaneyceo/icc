@@ -19,7 +19,7 @@
 ?>
 
 <div<?php print $attributes; ?>>
-  <div class="container">
+  <div class="l-container">
     <?php if ($admin_links): ?>
       <?php print $admin_links; ?>
     <?php endif; ?>

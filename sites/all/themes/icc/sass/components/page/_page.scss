@@ -5,16 +5,11 @@
   @include box-sizing(border-box);
 }
 
-.container {
+.l-container {
   max-width: $page-max-width;
   margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em;
-
-  @include breakpoint($page-max-width) {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  padding-left: 0;
+  padding-right: 0;
 }
 
 html {
@@ -31,7 +26,7 @@ body {
 .l-main {
   border-top: 10px solid $icc-orange;
   background: $icc-cream;
-  padding: 0 $mobile-horz-spacing;
+  padding: 0 $mobile-horz-spacing 1em $mobile-horz-spacing;
 
   @include breakpoint($page-max-width) {
     padding: 1em 0;
@@ -43,6 +38,7 @@ body {
   padding-top: $mobile-horz-spacing;
 }
 
+.node-type-background-image,
 .page-user {
   .l-content {
     @extend %set-max-width;
