@@ -5,7 +5,10 @@ $bp-float-col: 900px;
   $grids: add-grid(12 at $bp-float-col);
   $gutters: $mobile-horz-spacing;
   @include pie-clearfix;
-  margin: 0 $mobile-horz-spacing;
+
+  @include breakpoint($bp-float-col) {
+    margin: 0 $mobile-horz-spacing;
+  }
 
   .views-row {
     @include breakpoint($bp-float-col) {

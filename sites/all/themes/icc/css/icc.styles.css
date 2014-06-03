@@ -446,34 +446,38 @@ a {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\000033}}
 .view-display-id-crags_listing {
   *zoom: 1;
-  margin: 0 20px; }
+  margin: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ace\/\.rvm\/gems\/ruby-1\.9\.3-p484\@omega\.icc\/gems\/compass-0\.12\.5\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   .view-display-id-crags_listing:after {
     content: "";
     display: table;
     clear: both; }
   @media (min-width: 900px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\000033}}
+    .view-display-id-crags_listing {
+      margin: 0 20px; } }
+  @media (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000314}}
     .view-display-id-crags_listing .views-row {
       width: 33.33333%;
       clear: right;
       float: left;
       padding-right: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000318}}
       .view-display-id-crags_listing .views-row:nth-child(3n+1) {
         width: 33.33333%;
         clear: right;
         float: left;
         padding-right: 20px;
         clear: both; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000322}}
       .view-display-id-crags_listing .views-row:nth-child(3n+3) {
         width: 33.33333%;
         clear: right;
         float: right;
         padding-right: 20px;
         padding: 0; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000331}}
   .view-display-id-crags_listing .views-field-title .views-field-title-title {
     margin: 0;
     padding: 1em;
@@ -485,27 +489,27 @@ a {
     -moz-box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.3);
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000341}}
   .view-display-id-crags_listing .views-field-title a {
     display: block;
     background: #667241; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000346}}
     .view-display-id-crags_listing .views-field-title a * {
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000352}}
     .view-display-id-crags_listing .views-field-title a:hover, .view-display-id-crags_listing .views-field-title a:focus, .view-display-id-crags_listing .views-field-title a:active {
       background: #8e5920; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000355}}
       .view-display-id-crags_listing .views-field-title a:hover img, .view-display-id-crags_listing .views-field-title a:focus img, .view-display-id-crags_listing .views-field-title a:active img {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
         opacity: 0.5;
         -webkit-filter: grayscale(90%);
         -moz-filter: grayscale(90%);
         filter: grayscale(90%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/icc\/sites\/all\/themes\/icc\/sass\/components\/crags\/_views_crags_listing\.scss}line{font-family:\0000363}}
   .view-display-id-crags_listing img {
     width: 100%; }
 
