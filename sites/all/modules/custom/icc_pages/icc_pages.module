@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ICC Pages feature.
+ */
+
+include_once 'icc_pages.features.inc';

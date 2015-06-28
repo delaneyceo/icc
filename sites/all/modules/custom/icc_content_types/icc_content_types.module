@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ICC Content Types feature.
+ */
+
+include_once 'icc_content_types.features.inc';

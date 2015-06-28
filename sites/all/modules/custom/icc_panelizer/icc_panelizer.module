@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ICC Panelizer feature.
+ */
+
+include_once 'icc_panelizer.features.inc';

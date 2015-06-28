@@ -1,0 +1,9 @@
+name = ICC Taxonomy
+description = Taxonomy for the icc website
+core = 7.x
+package = icc
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = tags

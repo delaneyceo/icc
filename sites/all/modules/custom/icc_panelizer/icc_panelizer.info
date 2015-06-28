@@ -1,0 +1,15 @@
+name = ICC Panelizer
+description = Panelizer for the ICC website
+core = 7.x
+package = icc
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = panelizer
+features[ctools][] = panelizer:panelizer:1
+features[features_api][] = api:2
+features[panelizer_defaults][] = node:climbing_area:default:default
+features[panelizer_defaults][] = node:event:default:default
+features[panelizer_defaults][] = node:news:default:default
+features[panelizer_defaults][] = node:page:default
+features[panelizer_defaults][] = node:page:default:default
+features[panelizer_defaults][] = node:webform:default:default
