@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ICC Commerce feature.
+ */
+
+include_once 'icc_commerce.features.inc';
