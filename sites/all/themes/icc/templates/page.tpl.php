@@ -203,7 +203,10 @@
 
   <footer class="l-footer" role="contentinfo">
     <?php print render($page['footer']); ?>
-    <a href="http://www.accessfund.org/" class="af_logo"><img src="<?php print $directory . '/images/af_logo.png'; ?>" alt="Access Fund logo" /></a>
+    <div class="sponsor-logos">
+      <a href="http://www.accessfund.org/" class="af_logo"><img src="<?php print $directory . '/images/af_logo.png'; ?>" alt="Access Fund logo" /></a>
+      <a href="http://www.rei.com/" class="af_logo"><img src="<?php print $directory . '/images/rei_logo_wht.png'; ?>" alt="REI" /></a>
+    </div>
   </footer>
 </div>
 
